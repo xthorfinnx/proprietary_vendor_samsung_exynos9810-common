@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/init/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_brcm.rc \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/samsung/exynos9810-common/proprietary/vendor/etc/motod/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motod/dax-default.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
@@ -114,6 +115,9 @@ PRODUCT_PACKAGES += \
     libegis_fp_normal_sensor_test \
     libgf_in_system_lib \
     libiva_android_hal \
+    exynos9810_moto_stagefright_compat \
+    exynos9810_moto_dap_preg \
+    exynos9810_moto_dap_params \
     libqfp_sensortest \
     libsecnativefeature \
     libsecril-client \
@@ -126,6 +130,8 @@ PRODUCT_PACKAGES += \
     libvxu \
     sensors.bio \
     sensors.grip \
+    exynos9810_moto_dap \
+    exynos9810_moto_dms_interface \
     libaudio_soundtrigger \
     libcnn \
     libdatamod \
@@ -133,6 +139,7 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libprofileparamstorage \
     libsecaudiocoreutils \
+    android.frameworks.schedulerservice@1.0 \
     android.hardware.gnss@2.0-impl \
     gps.default \
     keystore.mdfpp \
@@ -142,10 +149,13 @@ PRODUCT_PACKAGES += \
     libflicker \
     libfloatingfeature \
     libkeymaster2_mdfpp \
+    exynos9810_moto_dms_engine \
+    exynos9810_moto_sqlite_compat \
     libril \
     libsec-ril-dsds-impl \
     libsec-ril-impl \
     libskeymaster3device \
+    exynos9810_moto_dms_impl \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio.bridge@2.0 \
     vendor.samsung.hardware.radio.channel@2.0 \
@@ -155,6 +165,7 @@ PRODUCT_PACKAGES += \
     gpsd \
     lhd \
     rild \
+    exynos9810_moto_dms_service \
     vendor.samsung.hardware.gnss@2.0-service \
     mcDriverDaemon \
     vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service
