@@ -101,6 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9810-common/proprietary/vendor/openvx/xml/_hifi_still_schedule.xml:$(TARGET_COPY_OUT_VENDOR)/openvx/xml/_hifi_still_schedule.xml
 
 PRODUCT_PACKAGES += \
+    android.frameworks.schedulerservice@1.0 \
     libGLES_mali \
     gatekeeper.exynos9810 \
     power.exynos9810 \
@@ -139,7 +140,6 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libprofileparamstorage \
     libsecaudiocoreutils \
-    android.frameworks.schedulerservice@1.0 \
     android.hardware.gnss@2.0-impl \
     gps.default \
     keystore.mdfpp \
